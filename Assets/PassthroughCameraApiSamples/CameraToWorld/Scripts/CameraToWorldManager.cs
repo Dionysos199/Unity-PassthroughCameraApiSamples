@@ -29,6 +29,7 @@ namespace PassthroughCameraSamples.CameraToWorld
         private bool m_isDebugOn;
         private bool m_snapshotTaken;
         private OVRPose m_snapshotHeadPose;
+        [SerializeField] private PlantIdentifier m_identifier;
 
         private void Awake() => OVRManager.display.RecenteredPose += RecenterCallBack;
 
@@ -76,6 +77,8 @@ namespace PassthroughCameraSamples.CameraToWorld
                     m_cameraCanvas.MakeCameraSnapshot();
                     m_webCamTextureManager.WebCamTexture.Stop();
                     m_snapshotHeadPose = m_centerEyeAnchor.transform.ToOVRPose();
+                    m_identifier.plantImageTexture = m_cameraCanvas.m_cameraSnapshot;
+                    m_identifier.CallIdentifyPlant();
                 }
                 else
                 {

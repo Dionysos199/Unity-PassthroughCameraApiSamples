@@ -13,7 +13,7 @@ namespace PassthroughCameraSamples.CameraToWorld
         [SerializeField] private WebCamTextureManager m_webCamTextureManager;
         [SerializeField] private Text m_debugText;
         [SerializeField] private RawImage m_image;
-        private Texture2D m_cameraSnapshot;
+        public Texture2D m_cameraSnapshot { get; private set; }
         private Color32[] m_pixelsBuffer;
 
         public void MakeCameraSnapshot()
