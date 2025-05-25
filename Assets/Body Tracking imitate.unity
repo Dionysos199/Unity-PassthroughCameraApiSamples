@@ -204,7 +204,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8436341638219913701, guid: 0e00cd252fc6ef144ba80184f765ddd8, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -0.46
       objectReference: {fileID: 0}
     - target: {fileID: 8436341638219913701, guid: 0e00cd252fc6ef144ba80184f765ddd8, type: 3}
       propertyPath: m_LocalPosition.y
@@ -251,13 +251,10 @@ PrefabInstance:
       addedObject: {fileID: 1172018533}
     - targetCorrespondingSourceObject: {fileID: 8436341638219482565, guid: 0e00cd252fc6ef144ba80184f765ddd8, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1172018538}
-    - targetCorrespondingSourceObject: {fileID: 8436341638219482565, guid: 0e00cd252fc6ef144ba80184f765ddd8, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 1172018537}
     - targetCorrespondingSourceObject: {fileID: 8436341638219482565, guid: 0e00cd252fc6ef144ba80184f765ddd8, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1172018539}
+      addedObject: {fileID: 1172018538}
   m_SourcePrefab: {fileID: 100100000, guid: 0e00cd252fc6ef144ba80184f765ddd8, type: 3}
 --- !u!1 &278863937
 GameObject:
@@ -441,11 +438,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 126d619cf4daa52469682f85c1378b4a, type: 3}
   m_PrefabInstance: {fileID: 391650850}
   m_PrefabAsset: {fileID: 0}
---- !u!137 &908089708 stripped
-SkinnedMeshRenderer:
-  m_CorrespondingSourceObject: {fileID: 365544160163603824, guid: 0e00cd252fc6ef144ba80184f765ddd8, type: 3}
-  m_PrefabInstance: {fileID: 214559871}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &926735808 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 459718, guid: 126d619cf4daa52469682f85c1378b4a, type: 3}
@@ -521,22 +513,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 1172018532}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 38d73b2d0c0ee504587e0237ec474ca4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _activeState: {fileID: 1172018538}
-  _target: {fileID: 908089708}
-  _normalColor: {r: 1, g: 0, b: 0, a: 1}
-  _activeColor: {r: 0, g: 1, b: 0, a: 1}
---- !u!114 &1172018538
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1172018532}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ebf7b9e4cfb7d2e4aa5a2dccb5ee7d0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
@@ -546,26 +522,29 @@ MonoBehaviour:
   - Joint: 7
     MaxDelta: 30
     Width: 4
+  - Joint: 15
+    MaxDelta: 30
+    Width: 4
   - Joint: 16
     MaxDelta: 30
     Width: 4
   - Joint: 10
     MaxDelta: 30
     Width: 4
-  - Joint: 16
+  - Joint: 11
     MaxDelta: 30
     Width: 4
-  - Joint: 15
+  - Joint: 7
     MaxDelta: 30
     Width: 4
-  - Joint: 19
+  - Joint: 12
     MaxDelta: 30
     Width: 4
-  - Joint: 45
+  - Joint: 17
     MaxDelta: 30
     Width: 4
   _minTimeInState: 0.05
---- !u!114 &1172018539
+--- !u!114 &1172018538
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -574,17 +553,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1172018532}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1d2705674196dfc4da9c25fbacda72d8, type: 3}
+  m_Script: {fileID: 11500000, guid: 38d73b2d0c0ee504587e0237ec474ca4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _activeState: {fileID: 1172018538}
-  _whenActivated:
-    m_PersistentCalls:
-      m_Calls: []
-  _whenDeactivated:
-    m_PersistentCalls:
-      m_Calls: []
-  _emitOnFirstUpdate: 1
+  _activeState: {fileID: 1172018537}
+  _target: {fileID: 2070413143}
+  _normalColor: {r: 1, g: 0, b: 0, a: 1}
+  _activeColor: {r: 0, g: 1, b: 0, a: 1}
 --- !u!1 &1260308799
 GameObject:
   m_ObjectHideFlags: 0
@@ -887,7 +862,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8436341638219913701, guid: 0e00cd252fc6ef144ba80184f765ddd8, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.551
+      value: 0.291
       objectReference: {fileID: 0}
     - target: {fileID: 8436341638219913701, guid: 0e00cd252fc6ef144ba80184f765ddd8, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1231,6 +1206,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7b47e36715521d4e8a30d2c5b6e83e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!137 &2070413143 stripped
+SkinnedMeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 365544160163603824, guid: 0e00cd252fc6ef144ba80184f765ddd8, type: 3}
+  m_PrefabInstance: {fileID: 214559871}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &2071481928 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 482130, guid: 126d619cf4daa52469682f85c1378b4a, type: 3}
