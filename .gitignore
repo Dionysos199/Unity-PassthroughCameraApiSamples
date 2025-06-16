@@ -16,3 +16,9 @@ ProjectSettings\Packages\com.unity.testtools.codecoverage\Settings.json
 PerformanceTestRun*.*
 StreamingAssets*
 !NativeSamples.zip
+builds/EscapeRoom.apk
+builds/Camera access API.apk
+builds/EscapeRoom.apk
+builds/EscapeRoom.apk
+/builds
+*.apk
